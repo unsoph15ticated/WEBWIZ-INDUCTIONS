@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" bg-[url('icsbackground.svg')] overflow-y-scroll overflow-x-hidden">
+    <nav
+        class=" bg-red-50 px-6 py-2 h-20 lg:px-14 w-full flex items-center justify-between shadow-2xl sticky left-0 top-0 z-10">
+        <div class="flex items-center gap-2 font-medium text-4xl "><img src="icslogo.png" alt="">ICS</div>
+
+        <ul class="hidden md:flex h-fit font-[400] text-lg text-md items-center">
+            <li class="hidden sm:block px-[7px] cursor-pointer">Counselling</li>
+            <li class="hidden sm:block px-[7px] cursor-pointer">FAQS</li>
+            <li class="hidden sm:block px-[7px] cursor-pointer">Team</li>
+            <li class="hidden sm:block px-[7px] cursor-pointer">Events</li>
+            <li class="hidden sm:block px-[7px] cursor-pointer">Services</li>
+            <li class="hidden sm:block px-[7px] cursor-pointer">Contact Us</li>
+            <li class="hidden sm:block px-[7px] cursor-pointer text-red-700 font-bold hover:text-red-500">Emergency</li>
+            <li class="hidden sm:block px-[7px]"><button
+                    class="py-[5px] px-3 border border-green-500 bg-green-500 text-white rounded-xl hover:bg-green-600 font-semibold">Book
+                    a Slot</button></li>
+        </ul>
+        <div class="text-4xl md:hidden">&#8801;</div>
+    </nav>
+
+    <div class="px-10 sm:p-0 h-auto flex justify-center items-center ">
+        <div class="h-full text-7xl flex flex-col justify-start font-semibold md:pl-28 pt-10 md:pt-0">
+            Institute<br>Counselling<br>Services
+            <div class="flex flex-col gap-4 mt-4">
+                <svg class="lg:block flex top-0 left-0 w-full h-14  ">
+                    <line x1="0%" y1="70%" x2="100%" y2="70%" stroke="#DFC4F0" stroke-width="7.5"></line>
+                    <circle cx="96%" cy="70%" r="15" fill="#DFC4F0"></circle>
+                </svg>
+                <svg class="md:block lg:hidden flex top-0 left-0 w-full h-14 lg:pl-20 ">
+                    <line x1="0%" y1="70%" x2="80%" y2="70%" stroke="#DFC4F0" stroke-width="7.5"></line>
+                    <circle cx="79%" cy="70%" r="15" fill="#DFC4F0"></circle>
+                </svg>
+                <svg class="md:hidden lg:hidden flex top-0 left-0 w-full h-14 lg:pl-20 md:pl-10 svg-padding">
+                    <line x1="0%" y1="70%" x2="60%" y2="70%" stroke="#DFC4F0" stroke-width="7.5"></line>
+                    <circle cx="59%" cy="70%" r="15" fill="#DFC4F0"></circle>
+                </svg>
+            </div>
+            <div class="hidden lg:block text-5xl ">NIT Rourkela</div>
+        </div>
+
+        <div class="justify-center items-center hidden md:flex w-full">
+            <div class="w-3/4 relative top-7 ">
+                <img class="w-full" src="icsanotherlogo.png" alt="">
+                <div class="z-[1] absolute bottom-0 right-0 bg-gray-100 rounded-lg px-4 py-2 shadow-xl shrink">
+                    <div class="text-center text-xl font-semibold">Socials</div>
+                    <ul class="flex ">
+                        <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"
+                                fill="green" stroke="green" stroke-width="0" stroke-linecap="round"
+                                stroke-linejoin="round" class="lg:h-7 lg:w-5 md:h-5 md:w-5">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07l-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z">
+                                </path>
+                            </svg></li>
+                        <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="green" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lg:h-7 lg:w-7 md:h-5 md:w-5">
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
+                                </path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M16.5 7.5l0 .01"></path>
+                            </svg></li>
+                        <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="green" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lg:h-7 lg:w-6 md:h-5 md:w-5">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.47a2.78 2.78 0 00-1.95 1.95A29.74 29.74 0 001 12a29.74 29.74 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29.74 29.74 0 0023 12a29.74 29.74 0 00-.46-5.58zM9.75 15.02V8.98l6.25 3.02-6.25 3.02z"
+                                    fill="#FFFFFF"></path>
+                            </svg></li>
+                        <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="green" stroke="green" stroke-width="0" stroke-linecap="round"
+                                stroke-linejoin="round" class="lg:h-7 lg:w-6 md:h-5 md:w-5">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                                </path>
+                            </svg></li>
+                        <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="green" stroke="green" stroke-width="0" stroke-linecap="round"
+                                stroke-linejoin="round" class="lg:h-7 lg:w-6 md:h-5 md:w-5">
+                                <path
+                                    d="M12 0C5.372 0 0 5.372 0 12c0 6.627 5.372 12 12 12s12-5.373 12-12c0-6.628-5.372-12-12-12zm5.372 17.373c-.176.293-.524.389-.82.215-2.25-1.375-5.08-1.685-8.41-.915-.335.085-.674-.123-.75-.46-.078-.335.124-.674.46-.75 3.627-.8 6.802-.448 9.297 1.038.293.176.391.526.215.872zm1.082-2.927c-.226.375-.714.504-1.098.278-2.578-1.563-6.502-2.015-9.534-1.094-.443.136-.914-.093-1.05-.537-.136-.443.093-.914.537-1.05 3.415-.994 7.745-.481 10.703 1.235.375.226.504.714.278 1.098zm.145-2.799c-3.135-1.854-8.312-2.025-11.212-1.104-.553.168-1.138-.137-1.306-.69-.168-.554.137-1.137.69-1.306 3.345-1.011 9.06-.813 12.641 1.26.499.293.658.933.365 1.433-.293.499-.934.659-1.433.366z"
+                                    fill="#1DB954"></path>
+                            </svg></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="w-full px-20 mt-20 pt-14 font-semibold text-[32px]
+    sm:text-[36px] lg:text-6xl ">
+        <h1 class=" text-right">About Us</h1>
+        <div class="w-full flex items-center mt-2 justify-end">
+            <div class="size-5 md:size-8 rounded-[50%] bg-[#D4E2D4]"></div>
+            <div class="w-[50%] brk-1:w-[60%] h-[7px] bg-[#D4E2D4]"></div>
+        </div>
+    </header>
+    <div class="px-10 md:px-20 lg:flex md:gap-10 space-y-5 items-center justify-center">
+        <div class="w-full px-10 flex justify-center lg:w-2/5"><img class="flex justify-center rounded-xl"
+                src="icsmentalhealth.webp" alt="">
+        </div>
+        <div class="text-xl lg:w-3/5">
+            <p>Institute Counselling Services, NIT Rourkela is a Technical Service Unit (TSU) of NIT Rourkela.
+                Established in August 2017, the team comprises of faculty members, including Head of Unit, Prof.
+                Ramakrishna Biswal, Student Coordinators, Prefects and Mentors. ICS aims to prepare the students for a
+                confident approach towards life and to bring about a voluntary change in themselves. The goal of
+                counselling is to help individuals overcome their immediate problems and also to equip them to meet
+                future problems. The goals of counselling are appropriately concerned with fundamental and basic aspects
+                such as self-understanding and self-actualization.</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-20 px-10">
+        <div class="font-semibold text-[32px]
+        sm:text-[36px] lg:text-6xl pb-8">Objective</div>
+        <p class="text-xl px-10 md:px-20 ">The primary objective of ICS is to encourage a confident outlook towards life
+            and establish a balance between one’s academic and personal life. This service deals with various important
+            aspects of a student’s life such as Academic, Financial, Mental and Socio-cultural issues, ensuring a
+            seamless transition from home to hostel life for the freshmen and directs its efforts to safeguard the
+            mental health of all students and faculty of the institute. With the help of counselling, individuals can
+            overcome their immediate problems and enhance their capability to tackle obstacles in future.</p>
+    </div>
+
+    <div class="w-full px-20 md:pr-16 md:pl-24 mt-20 font-semibold text-[32px]
+    sm:text-[36px] lg:text-6xl ">
+        <h1 class=" text-left">Our Workforce</h1>
+        <div class="w-full flex items-center mt-2 ">
+            <div class="w-[50%] brk-1:w-[60%] h-[7px] bg-[#D4E2D4]"></div>
+            <div class="size-5 md:size-8 rounded-[50%] bg-[#D4E2D4]"></div>
+        </div>
+    </div>
+
+    <div class="px-10 md:pr-16 md:pl-24 lg:flex lg:flex-row-reverse md:gap-10 space-y-5 items-center justify-center">
+        <div class="w-full px-10 pt-4 flex justify-center lg:w-2/5"><img
+                class="flex justify-center shadow-xl rounded-xl" src="icsheartinbrain.webp" alt="">
+        </div>
+        <div class="text-xl lg:w-3/5">
+            <p>Mentors are assigned to first-year students to help bridge the gap between junior and senior students and
+                provide them with personal and professional support. Mentors come under the responsibility of Prefects
+                and Coordinators oversee the working of the entire organisation and assist Prefects with their duties.
+                The entire student body is advised by Mr Amlan Das, who has been associated with ICS since its
+                foundation.</p>
+        </div>
+    </div>
+
+    <div class="w-full px-20 mt-20 font-semibold text-[32px]
+    sm:text-[36px] lg:text-6xl ">
+        <h1 class=" text-right">Counselling</h1>
+        <div class="w-full flex items-center mt-2 justify-end">
+            <div class="size-5 md:size-8 rounded-[50%] bg-[#D4E2D4]"></div>
+            <div class="w-[50%] brk-1:w-[60%] h-[7px] bg-[#D4E2D4]"></div>
+        </div>
+    </div>
+
+    <div class="px-10 md:px-20 py-8 w-screen h-auto flex flex-wrap gap-5 justify-around ">
+        <!-- DIV1 -->
+        <div
+            class="h-auto max-w-sm border border-gray-300 bg-white flex flex-col items-center pb-5 rounded-xl overflow-hidden box-border">
+            <div class=" overflow-hidden shadow-md"><img class="object-contain" src="grid1.webp" alt=""></div>
+            <div class="text-center text-xl font-medium sm:text-2xl px-8 py-4 ">Get Access to Professional Online
+                Counselling with YourDost.</div>
+            <div
+                class="p-3 mt-2 border-2 border-indigo-500 bg-indigo-500 font-bold text-lg text-white  rounded-xl cursor-pointer hover:bg-green-500 hover:shadow-2xl hover:border-green-500">
+                <button>YOURDOST WEBSITE</button>
+            </div>
+        </div>
+        <!-- DIV2 -->
+        <div
+            class="h-auto max-w-sm border border-gray-300 bg-white flex flex-col items-center pb-5 rounded-xl overflow-hidden box-border">
+            <div class=" overflow-hidden shadow-md"><img src="grid2.webp" alt=""></div>
+            <div class="text-center text-xl font-medium sm:text-2xl px-8 py-4 ">Book slots for ONLINE and OFFLINE
+                sessions with Counsellor.</div>
+            <div
+                class="p-3 mt-2 border-2 border-indigo-500 bg-indigo-500 font-bold text-lg text-white  rounded-xl cursor-pointer hover:bg-green-500 hover:shadow-2xl hover:border-green-500">
+                <button>YOURDOST WEBSITE</button>
+            </div>
+        </div>
+        <!-- DIV3 -->
+        <div
+            class="h-auto max-w-sm border border-gray-300 bg-white flex flex-col items-center  pb-5 rounded-xl overflow-hidden box-border">
+            <div class=" overflow-hidden shadow-md"><img src="grid3.webp" alt=""></div>
+            <div class="text-center text-xl font-medium sm:text-2xl px-5 py-4 ">Tele MANAS is a govt. initiative that
+                provides free mental health service all over India.</div>
+            <div
+                class="p-3 mt-3 border-2 border-indigo-500 bg-indigo-500 font-bold text-lg text-white  rounded-xl cursor-pointer hover:bg-green-500 hover:shadow-2xl hover:border-green-500">
+                <button>YOURDOST WEBSITE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full px-20 mt-16 font-semibold text-[32px]
+    sm:text-[36px] lg:text-6xl ">
+        <h1 class=" text-right">Services</h1>
+        <div class="w-full flex items-center mt-2 justify-end">
+            <div class="size-5 md:size-8 rounded-[50%] bg-[#D4E2D4]"></div>
+            <div class="w-[50%] brk-1:w-[60%] h-[7px] bg-[#D4E2D4]"></div>
+        </div>
+    </div>
+
+    <div class="pt-5 px-20  md:flex md:flex-col mx-auto ">
+        <div
+            class=" md:w-3/5 flex flex-col items-center  bg-gray-100 border-2 border-gray-400 rounded-xl pb-6 hover:shadow-2xl mx-auto">
+            <div><img alt="Offline Counselling Services" width="715" height="400"
+                    class="object-contain w-[450px] sm:w-[650px] md:w-[800px] lg:w-[1000px] h-[200px] md:h-[350px] mx-auto"
+                    style="color:transparent" src="services.webp"></div>
+            <div class="text-2xl md:text-3xl lg:text-5xl text-center px-5 mx-auto">Offline Councelling Services</div>
+            <div
+                class="text-center text-sm sm:text-xl md:text-2xl text-wrap text-gray-700 sm:px-2 md: px-4 xl:px-6 mx-auto mt-7 mb-6 w-10/12 ">
+                ICS provides Free Consultation from Psychiatrists, Counsellors & Neuropsychiatrists to seek professional
+                mental health advice.
+            </div>
+            <button
+                class="px-5 py-2 border-2 border-gray-500 rounded-3xl font-mono text-lg cursor-pointer hover:bg-slate-500 hover:text-white">Learn
+                More</button>
+        </div>
+    </div>
+
+    <header class="w-full px-10 md:px-20 mt-20 text-black text-[32px] sm:text-[36px] lg:text-6xl font-semibold">
+        <h1 class="text-left">FAQs</h1>
+        <div class="w-full flex items-center mt-2 ">
+            <div class="w-[50%] brk-1:w-[60%] h-[7px] bg-[#D4E2D4]"></div>
+            <div class="size-5 md:size-8 rounded-[50%] bg-[#D4E2D4]"></div>
+        </div>
+    </header>
+
+    <div class="w-full px-10 md:px-20 ">
+        <div
+            class="w-full sm:w-4/5 lg:w-[55%] m-auto bg-green-200 flex justify-evenly items-center p-2 rounded-3xl text-lg md:text-2xl mt-2">
+            <div class="px-3 py-2 bg-white rounded-3xl font-semibold" cursor-pointer>Academics</div>
+            <div class="text-gray-500">Financial</div>
+            <div class="text-gray-500">Miscellaneous</div>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center mx-auto gap-4 w-full md:w-3/4 bg-purple-100 h-auto rounded-lg mt-3 py-10 px-10 font-mono ">
+            <div class="bg-white h-auto p-4 rounded-lg w-full flex justify-between items-center text-wrap space-x-9 ">
+                <div class="text-left md:text-lg">How can one apply for a new ID card after he/she has lost one?</div>
+                <div class="text-4xl cursor-pointer hover:rotate-45 hover:transition-all">+</div>
+            </div>
+            <div class="bg-white h-auto p-4 rounded-lg w-full flex justify-between items-center text-wrap space-x-9 ">
+                <div class="text-left md:text-lg">Does enrolling in Spot Round lead to getting absent in the previous
+                    classes in which one was not there on campus? How does rectify an error, if any?</div>
+                <div class="text-4xl cursor-pointer hover:rotate-45 hover:transition-all">+</div>
+            </div>
+            <div class="bg-white h-auto p-4 rounded-lg w-full flex justify-between items-center text-wrap space-x-9 ">
+                <div class="text-left md:text-lg">Can people with NSS/ PE/NCC backlog apply for minor degree courses ?
+                </div>
+                <div class="text-4xl cursor-pointer hover:rotate-45 hover:transition-all">+</div>
+            </div>
+            <div class="bg-white h-auto p-4 rounded-lg w-full flex justify-between items-center text-wrap space-x-9 ">
+                <div class="text-left md:text-lg">Under what circumstances is honours degree awarded to a graduate?
+                </div>
+                <div class="text-4xl cursor-pointer hover:rotate-45 hover:transition-all">+</div>
+            </div>
+            <div class="bg-white h-auto p-4 rounded-lg w-full flex justify-between items-center text-wrap space-x-9 ">
+                <div class="text-left md:text-lg">How does a backlog, debar, de-registration and grade back affect one's
+                    SGPA and CGPA as a whole?</div>
+                <div class="text-4xl cursor-pointer hover:rotate-45 hover:transition-all">+</div>
+            </div>
+            <button class="font-sans font-bold text-gray-600 p-2 border-2 rounded-xl border-purple-400 cursor-pointer hover:text-black hover:bg-purple-400 pt-2 relative top-3">ASK WEBWIZ AI</button>
+        </div>
+    </div>
+
+    <div class="w-full px-10 md:px-20 mt-20 text-black text-[32px] sm:text-[36px] lg:text-6xl font-semibold">
+        <h1 class="text-left">AcadVault</h1>
+        <div class="w-full flex items-center mt-2 ">
+            <div class="w-[50%] brk-1:w-[60%] h-[7px] bg-[#D4E2D4]"></div>
+            <div class="size-5 md:size-8 rounded-[50%] bg-[#D4E2D4]"></div>
+        </div>
+    </div>
+
+    <div class="px-10 md:px-20 text-center">
+        <p class="text-left text-2xl my-8 w-full md:px-24 h-auto">Acad Vault is a compilation of textbooks, notes, and
+            other resources from senior students and alumni created
+            for the benefit of students. It contains all the important educational materials available to the NITR
+            student community over the last five years. The resources are available on the newly-designed Acad Vault
+            website, which can be found here.</p>
+        <button
+            class="py-3 px-5 border mx-auto border-green-500 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 textlg md:text-xl">LOGIN
+            HERE</button>
+    </div>
+
+    <div class="px-10 md:px-20 mt-16 sm:mt-20 flex flex-col items-center md:space-y-5 space-y-2">
+        <h1 class="text-red-700 text-4xl sm:text-5xl lg:text-6xl text-center font-semibold ">Emergency</h1>
+        <div class="md:text-5xl sm:text-4xl text-center text-2xl font-thin text-gray-600">Incase you are in trouble, we
+            are here</div>
+    </div>
+
+    <div class="px-10 md:px-20 mt-16 sm:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-10 ">
+        <div class="bg-[#D4E2D4] rounded-xl">
+            <span
+                class="bg-red-400 px-4 py-2 rounded-3xl   relative bottom-1 right-1 text-white text-lg font-semibold ">HOU,
+                ICS</span>
+            <div class="flex flex-col justify-center items-center h-36 text-lg lg:text-xl">Prof Ramakrishna Biswal
+                <div class=" text-lg lg:text-xl">+91 8249348088</div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] rounded-xl">
+            <span
+                class="bg-red-400 px-4 py-2 rounded-3xl  relative bottom-1 right-1 text-white text-lg font-semibold ">HEAD,
+                HEALTH CENTER</span>
+            <div class="flex flex-col justify-center items-center h-36 text-lg lg:text-xl">Dr Champak Bhattacharyya
+                <div class=" text-lg lg:text-xl">+91 8895298094</div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] rounded-xl">
+            <span
+                class="bg-red-400 px-4 py-2 rounded-3xl  relative bottom-1 right-1 text-white text-lg font-semibold ">MEDICAL
+                OFFICER</span>
+            <div class="flex flex-col justify-center items-center h-36 text-lg lg:text-xl">Dr. Soumya Ranjan Behera
+                <div class=" text-lg lg:text-xl">+91 7904996232</div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] rounded-xl">
+            <span
+                class="bg-red-400 px-4 py-2 rounded-3xl  relative bottom-1 right-1 text-white text-lg font-semibold ">PSYCHOLOGIST</span>
+            <div class="flex flex-col justify-center items-center h-36 text-lg lg:text-xl">Dr. Ekta Sanghi
+                <div class=" text-lg lg:text-xl">+91 9337403927</div>
+            </div>
+        </div>
+
+        <div class=" rounded-xl flex flex-col gap-5 ">
+            <div class="bg-[#D4E2D4] h-1/2 rounded-xl pb-4 ">
+                <span
+                    class="bg-red-400 px-4 py-2 rounded-3xl  relative bottom-1 right-1 text-white text-lg font-semibold ">DOCTOR
+                    ON EMERGENCY</span>
+                <div class="text-center text-lg lg:text-xl">+91 8280468607</div>
+            </div>
+            <div class="bg-[#D4E2D4] h-1/2 rounded-xl pb-4 ">
+                <span
+                    class="bg-red-400 px-4 py-2 rounded-3xl  relative bottom-1 right-1 text-white text-lg font-semibold ">SECURITY
+                    CONTROL ROOM</span>
+                <div class="text-center text-lg lg:text-xl">+91 8280468607</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="px-10 md:px-20 mt-20 flex flex-col items-center md:space-y-5 space-y-2">
+        <h1 class="text-red-700 text-4xl sm:text-5xl lg:text-6xl text-center font-semibold ">Suicide Prevention</h1>
+    </div>
+
+    <div class="px-10 md:px-20 mt-6 lg:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-[#D4E2D4] text-lg h-auto w-full rounded-xl flex justify-center items-center text-center py-4">
+            <div>
+                <div class=" text-xl pb-2 italic">Sneha Foundation India</div>
+                <div class="">help@snehaindia.org
+                    <br> 044-24640059
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] text-lg h-auto w-full rounded-xl flex justify-center items-center text-center py-4">
+            <div>
+                <div class=" text-xl pb-2 italic">Sumaitri Helpline</div>
+                <div class="">feelingsuicidal@sumaitri.net
+                    <br>011-23389090
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] text-lg h-auto w-full rounded-xl flex justify-center items-center text-center py-4">
+            <div>
+                <div class=" text-xl pb-2 italic">Vandrevala Foundation</div>
+                <div class="">help@vandrevalafoundation.com
+                    <br>1860-2662-345
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] text-lg h-auto w-full rounded-xl flex justify-center items-center text-center py-4">
+            <div>
+                <div class=" text-xl pb-8 italic">Connecting India</div>
+                <div class="">help@snehaindia.org
+                    <br> 044-24640059
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] text-lg h-auto w-full rounded-xl flex justify-center items-center text-center py-4">
+            <div>
+                <div class=" text-xl pb-8 italic">iCall</div>
+                <div class="">feelingsuicidal@sumaitri.net
+                    <br>011-23389090
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#D4E2D4] text-lg h-auto w-full rounded-xl flex justify-center items-center text-center py-4">
+            <div>
+                <div class=" text-xl pb-8 italic">Samaritans Mumbai</div>
+                <div class="">help@vandrevalafoundation.com
+                    <br>1860-2662-345
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full px-10 md:px-20 mt-20 text-black text-[32px] sm:text-[36px] lg:text-6xl font-semibold">
+        <h1 class="text-right">Contact Us</h1>
+        <div class="w-full flex items-center mt-2 justify-end">
+            <div class="size-5 md:size-8 rounded-[50%] bg-[#D4E2D4]"></div>
+            <div class="w-[50%] brk-1:w-[60%] h-[7px] bg-[#D4E2D4]"></div>
+        </div>
+    </div>
+
+    <div class="w-full px-10 md:px-20 mt-16 flex flex-col lg:flex-row items-center justify-between  gap-10 mx-auto">
+        <div class="w-auto h-full">
+            <img src="gif.gif" alt="No Image">
+        </div>
+        <div class="flex flex-col-reverse md:flex-row gap-10 w-auto">
+            <div class=" flex flex-col justify-center items-center gap-5">
+                <span class="bg-[#D3D3D3] flex gap-4 p-4 rounded-xl">
+                    <span class="my-auto text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144zm0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64z">
+                            </path>
+                        </svg></span>
+                    <span class="text-left text-lg md:text-xl text-wrap">Institute Councelling Services Near BPCL,
+                        NITR</span>
+                </span>
+                <span class="bg-[#FFCACC] p-4 rounded-xl flex gap-4">
+                    <span class="my-auto text-xl"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                            </path>
+                        </svg></span>
+                    <span class="text-lg md:text-xl">ics@nitrkl.ac.in</span>
+                </span>
+                <span class="bg-[#DBC4F0] p-4 rounded-xl flex gap-4">
+                    <span class="text-center text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
+                            </path>
+                        </svg></span>
+                    <span class="text-lg md:text-xl">+91 6612426726</span>
+                </span>
+            </div>
+            <div class="h-full mx-auto">
+                <div class="lg:size-[350px]  md:size-[300px] size-[280px]"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.6443060975976!2d84.90008557524932!3d22.253570544587635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201e7f5c870b8d%3A0xdfead2cbcaec2acb!2sICS%20-%20Institute%20Counselling%20Services%2C%20NIT%20Rourkela!5e0!3m2!1sen!2sin!4v1722282252915!5m2!1sen!2sin"
+                        class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full px-10 md:px-20 mt-16 flex justify-center items-center mx-auto">
+        <button
+            class="bg-[#D4E2D4] p-4 text-2xl lg:text-xl lg:font-semibold rounded-xl cursor-pointer hover: shadow-lg ">DOWNLOAD
+            OUR APP</button>
+    </div>
+
+    <div class="w-full px-10 md:px-20 mt-16 flex justify-center items-center gap-10 md:gap-20">
+        <span class="text-center">
+            <div class="md:text-3xl text-2xl font-bold">4.5★</div>
+            <div class="text-gray-600 font-semibold md:text-xl">714 Reviews</div>
+        </span>
+
+        <span class="text-center">
+            <div class="md:text-3xl text-2xl font-bold">5K+</div>
+            <div class="text-gray-600 font-semibold md:text-xl">Downloads</div>
+        </span>
+
+        <span class="text-center">
+            <div class="md:text-3xl text-2xl font-bold">3+</div>
+            <div class="text-gray-600 font-semibold md:text-xl">Rated for 3+</div>
+        </span>
+    </div>
+
+    <div
+        class="w-full px-10 md:px-20 mt-16 bg-gradient-to-t from-[#D4E2D4] via-[#fff] to-[#ffffff00] flex flex-col lg:flex-row gap-10 items-center justify-between pb-14">
+        <div class="flex items-center justify-center gap-5">
+            <img class="object-contain" width="160" height="160" src="icsfooterlogo.webp" alt="">
+            <div class="text-6xl md:text-7xl ">ICS</div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-10 sm:gap-20">
+            <div>
+                <h1 class="text-center text-2xl font-bold pb-6">Navigation</h1>
+                <div class="flex gap-10">
+                    <ul class="flex flex-col text-lg text-gray-700 space-y-4">
+                        <li>Home</li>
+                        <li>Counselling</li>
+                        <li>FAQs</li>
+                        <li>Emergency</li>
+                    </ul>
+                    <ul class="flex flex-col text-lg text-gray-700 space-y-4">
+                        <li>Contact us</li>
+                        <li>Team</li>
+                        <li>Gallery</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-center text-2xl font-bold pb-6">Useful Links</h1>
+                <ul class="flex flex-col text-lg text-gray-700 space-y-4 text-center">
+                    <li>NIT Rourkela</li>
+                    <li>NITRIS</li>
+                    <li>NITR Webmail</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#D4E2D4] w-full px-10 md:px-20">
+        <div class="border-t-2 border-black pb-5"></div>
+        <ul class="flex justify-end gap-2 pb-5">
+            <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-[#000] cursor-pointer"
+                    height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+                    </path>
+                </svg></li>
+            <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-[#000] cursor-pointer"
+                    height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                </svg></li>
+            <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#000] cursor-pointer"
+                    height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                    </path>
+                </svg></li>
+            <li class="px-2 py-2 my-1 rounded-xl cursor-pointer hover:bg-green-200"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                    stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"
+                    class="lg:h-7 lg:w-6 md:h-5 md:w-5">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                    </path>
+                </svg></li>
+        </ul>
+        <div class="pb-6 flex justify-between items-center flex-col lg:flex-row text-center gap-2">
+            <div class="italic">Copyright © 2024 National Institute of Technology Rourkela. All Rights Reserved.</div>
+            <div class="font-semibold">Terms & Conditions | Hyperlinking Policy | Privacy Policy | Copyright</div>
+        </div>
+
+        <div class="w-full flex sm:flex-row justify-between  items-center flex-col-reverse pb-10 pt-6">
+            <div>Built by Soumyojit Pal for WebWiz Inductions</div>
+            <div class="flex">
+                <img src="FooterWebwizLogo.webp" alt="" width="65" height="65">
+                <img src="FooterIcsLogo.webp" alt="" width="65" height="65">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

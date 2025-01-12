@@ -1,3 +1,1 @@
-# WEBWIZ-INDUCTIONS
-# Name :- Soumyojit Pal
-# 1st year
+For WebWiz Inductions
